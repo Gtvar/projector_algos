@@ -59,8 +59,8 @@ def measureComplexity(countDatasets = 1, maxNumber = 10000, print = 0):
 
     return createTimeMs, findTime, deleteTime, insertTime, memoryForInsert
 
-countDatasets = 3
-maxNumber = 120000
+countDatasets = 10
+maxNumber = 1000
 createTimeMs, findTime, deleteTime, insertTime, memoryForInsert = measureComplexity(countDatasets, maxNumber)
 
 print("--- Total result for %s datasets with %s max numbers ---" % (countDatasets, maxNumber))
